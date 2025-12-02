@@ -32,7 +32,7 @@ npm run dev
 
 2. Build the frontend
 
-Everything is coded niside the main file App.tsx for simplicity 
+Everything is coded inside the main file App.tsx for simplicity 
 
 3. Supabase Storage
     1. Create a free Supabase account
