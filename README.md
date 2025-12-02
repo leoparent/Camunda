@@ -33,6 +33,12 @@ npm run dev
 2. code the frontend
 Only in the first page app.tsx to stay simple
 
+1. Item 1
+    1. Item 3a
+    2. Item 3b
+2. Item 2
+3. Item 3
+   
 3. Supabase Storage
   1. Create a free Supabase account
   2. Get the credentials
