@@ -19,7 +19,7 @@ Nothing to fancy here but just wanted to make an image for visualization
 
 
 ## How I did it?
-1. First to create a React project you must install [node](https://nodejs.org/fr/download) on your pc.
+1) First to create a React project you must install [node](https://nodejs.org/fr/download) on your pc.
 Then go to your folder and type this command
 ```
 npm create vite@latest my-app
@@ -30,25 +30,25 @@ cd my-app
 npm install 
 npm run dev 
 ```
- 
-2. code the frontend
+
+2) code the frontend
 Only in the first page app.tsx to stay simple
 
-3. Connect with the Supabase Storage
+3) Connect with the Supabase Storage
 Had to create a free Supabase account, get the credentials and connect to the storage.
 Connect to the code and create the function with the request 
 
-4. Create the Dockerfile 
+4) Create the Dockerfile 
 Create the dockerfile and test if it's run  
 
 ## How to run the app? (with npm and docker)
-1. First Option with Docker 
+1) First Option with Docker 
 Install the application and go to the root of the app and lauch this command
 ```
 docker build -t my-react-app . 
 docker run -p 5173:5173 my-react-app 
 ```
-2. With your local machine
+2) With your local machine
 You clone the code and do this two steps:
 ```
 npm install
