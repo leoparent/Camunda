@@ -3,5 +3,4 @@
 ## 
 What can you find here ? 
 - A react Project using typescript with supabase storage as a backend 
-<img width="521" height="211" alt="camunda" src="https://github.com/user-attachments/assets/a17ffde3-43be-4963-8559-7a336149773e" />
-
+<img width="621" height="331" alt="camunda (1)" src="https://github.com/user-attachments/assets/b66e8cf1-b0db-403a-b11e-d5759ed875bc" />
