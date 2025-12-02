@@ -20,7 +20,7 @@ Nothing to fancy here but just wanted to make an image for visualization
 
 ## How I did it?
 1. First to create a React project you must install [node](https://nodejs.org/fr/download) on your pc.
-Then go to your folder and type this command:
+Then go to your folder and type this command
 ```
 npm create vite@latest my-app
 ```
@@ -30,8 +30,7 @@ cd my-app
 npm install 
 npm run dev 
 ```
-
-2. code the front end
+2. code the frontend
 Only in the first page app.tsx to stay simple
 
 3.Connect with the Supabase Storage
