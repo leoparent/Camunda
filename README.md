@@ -31,30 +31,30 @@ npm run dev
 ```
 
 2. code the frontend
+
 Only in the first page app.tsx to stay simple
 
-1. Item 1
-    1. Item 3a
-    2. Item 3b
-2. Item 2
-3. Item 3
-   
 3. Supabase Storage
-  1. Create a free Supabase account
-  2. Get the credentials
-  3. connect the storag and the code
-  4. Connect to the code and create the function with the request 
+    1. Create a free Supabase account
+    2. Get the credentials
+    3. Connect it to the code and create the function with the request 
 
 4) Create the Dockerfile 
 
 ## How to run the app? (with npm and docker)
+
+In both case please clone to the project
+
 1. First Option with Docker 
-Install the application and go to the root of the app and lauch this command
+
+Install the application and go to the root of the app and type those commands
 ```
 docker build -t my-react-app . 
 docker run -p 5173:5173 my-react-app 
 ```
-2. With your local machine and with npm:
+2. With your local machine
+
+Go to the root of the project and type those commands
 ```
 npm install
 npm run dev
