@@ -20,8 +20,10 @@ Nothing to fancy here but just wanted to make an image for visualization
 
 ## How I did it?
 1. First to create a React project you must install [node](https://nodejs.org/fr/download) on your pc.
-Then go to your folder and type this command: 
-`npm create vite@latest my-app ;`
+Then go to your folder and type this command:
+```
+npm create vite@latest my-app
+```
 then 
 ```
 cd my-app 
