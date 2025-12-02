@@ -8,8 +8,7 @@
 
 ## Introduction
 To do this project I choose React with Typescript to build a quick frontend. 
-For the storage I decided to go for a cloud blob storage option (supabase) that is for me the simpliest way to store images. 
-Supabase is a very easy & free way to set up a blob storage for small projects.
+For the storage I decided to go for a **cloud blob storage option** (supabase) that is for me the simpliest way to store images. 
 => I also though it would make sense to use a cloud storage because I guess that it is relevent to the daily work at Camunda. 
 
 ## Architecture of the project 
