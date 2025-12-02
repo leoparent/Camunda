@@ -30,6 +30,7 @@ cd my-app
 npm install 
 npm run dev 
 ```
+:) 
 2. code the frontend
 Only in the first page app.tsx to stay simple
 
