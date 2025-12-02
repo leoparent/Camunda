@@ -30,15 +30,15 @@ cd my-app
 npm install 
 npm run dev 
 ```
-:) 
+ 
 2. code the frontend
 Only in the first page app.tsx to stay simple
 
-3.Connect with the Supabase Storage
+3. Connect with the Supabase Storage
 Had to create a free Supabase account, get the credentials and connect to the storage.
 Connect to the code and create the function with the request 
 
-4.Create the Dockerfile 
+4. Create the Dockerfile 
 Create the dockerfile and test if it's run  
 
 ## How to run the app? (with npm and docker)
