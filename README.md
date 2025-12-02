@@ -21,8 +21,19 @@ Nothing to fancy here but just wanted to make an image for visualization
 ## Architecture of the project 
 First to create a React project you must install [node](https://nodejs.org/fr/download) on your pc.
 Then go to your folder and type this command: 
-`npm create vite@latest my-app` 
+`npm create vite@latest my-app ;`
 then 
-`cd my-app `
-`npm install`
-`npm run dev`
+```
+cd my-app ;
+npm install ;
+npm run dev ;
+```
+## How to run the app? (with npm and docker)
+1. First Option with Docker 
+Install the application and go to the root of the app and lauch this command
+```
+docker build -t my-react-app . ;
+docker run -p 5173:5173 my-react-app ;
+```
+
+
