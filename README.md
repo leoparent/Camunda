@@ -41,7 +41,7 @@ Only in the first page app.tsx to stay simple
 
 4) Create the Dockerfile 
 
-## How to run the app? (with npm and docker)
+## How to run the app? (with npm, docker & online)
 
 In both case please clone to the project
 
@@ -60,4 +60,9 @@ npm install
 npm run dev
 ```
 You need to have node install for this option!
+
+3. Access the App through the internet
+
+If none of this option are working (Both should work).
+I deployed the website with vercel and you should be able to access it through this [link](https://camunda-kappa.vercel.app/) 
 
