@@ -14,7 +14,6 @@ For the storage, I decided to go for a **cloud blob storage option** (Supabase) 
 ## Architecture of the project 
 <img width="621" height="331" alt="camunda (1)" src="https://github.com/user-attachments/assets/b66e8cf1-b0db-403a-b11e-d5759ed875bc" />
 
-
 ## How I build it
 1. Create a React Project
 

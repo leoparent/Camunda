@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { supabase } from "./supabase/supabaseClient";
+import { supabase } from "./supabase/supabaseClient"; //Credentials for the cloud storage
 
 export default function LandscapeImage() {
   const [imgUrls, setImgUrls] = useState<string[]>([]);
@@ -16,16 +16,16 @@ export default function LandscapeImage() {
 
     for (let i = 0; i < number; i++) {
       try {
-        const imageUrl = `https://picsum.photos/300/200?${Date.now()}-${Math.random()}`; //You can try in the url every img is different so we're soing x time the url and retrieving the img (math random is use because we don't want to have the same img)
+        const imageUrl = `https://picsum.photos/300/200?-${Math.random()}`; //You can try in the url every img is different so we're doing x time the url and retrieving the img (math random is use because we don't want to have the same img)
         const response = await fetch(imageUrl);
-        const blob = await response.blob();
+        const blob = await response.blob(); //image is store as a blob storage
 
-        const filePath = `landscape_${Date.now()}_${Math.random()}.jpg`;
-
-        const { error } = await supabase.storage
+        const filePath = `landscape_${Math.random()}`; //Every img must have a different name to be uploaded in the blobl storage, the random function helps 
+        
+        const { error } = await supabase.storage // We upload the img in the DB
           .from("images")
           .upload(filePath, blob, {
-            contentType: "image/jpeg",
+            contentType: "image/jpeg", 
           });
 
         if (error) {
@@ -33,13 +33,13 @@ export default function LandscapeImage() {
           continue;
         }
 
-        const { data: publicData } = supabase.storage
+        const { data: publicData } = supabase.storage // We retirebe the url like that we will be able to display it in the front end 
           .from("images")
           .getPublicUrl(filePath);
 
         newUrls.push(publicData.publicUrl);
       } catch (err) {
-        console.error("Erreur :", err);
+        console.error("Error :", err);
       }
     }
 
@@ -53,10 +53,10 @@ export default function LandscapeImage() {
 
     const { data: files, error } = await supabase.storage
       .from("images")
-      .list("", { sortBy: { column: "created_at", order: "asc" } });
+      .list("", { sortBy: { column: "created_at", order: "asc" } }); // We order them then we get the last one 
 
     if (error) {
-      console.error("Erreur listage:", error);
+      console.error("Error:", error);
       return;
     }
 
@@ -65,7 +65,7 @@ export default function LandscapeImage() {
     const lastFile = files[files.length - 1]; // last uploaded img
     const fileName = lastFile.name;
 
-    const { data: publicData } = supabase.storage
+    const { data: publicData } = supabase.storage //We retrieve the last img
       .from("images")
       .getPublicUrl(fileName);
 
